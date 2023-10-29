@@ -16,6 +16,8 @@
 		722BA7FC2AD3D6770087A10B /* Daily_Journal_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722BA7FB2AD3D6770087A10B /* Daily_Journal_AppTests.swift */; };
 		722BA8062AD3D6770087A10B /* Daily_Journal_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722BA8052AD3D6770087A10B /* Daily_Journal_AppUITests.swift */; };
 		722BA8082AD3D6770087A10B /* Daily_Journal_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722BA8072AD3D6770087A10B /* Daily_Journal_AppUITestsLaunchTests.swift */; };
+		7255F1032AD8EE4300C101B7 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7255F1022AD8EE4300C101B7 /* NotesViewController.swift */; };
+		7255F1052AD8EE7500C101B7 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7255F1042AD8EE7500C101B7 /* EntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		722BA8012AD3D6770087A10B /* Daily-Journal-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily-Journal-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		722BA8052AD3D6770087A10B /* Daily_Journal_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Journal_AppUITests.swift; sourceTree = "<group>"; };
 		722BA8072AD3D6770087A10B /* Daily_Journal_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Journal_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7255F1022AD8EE4300C101B7 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		7255F1042AD8EE7500C101B7 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				722BA7ED2AD3D6770087A10B /* Assets.xcassets */,
 				722BA7EF2AD3D6770087A10B /* LaunchScreen.storyboard */,
 				722BA7F22AD3D6770087A10B /* Info.plist */,
+				7255F1022AD8EE4300C101B7 /* NotesViewController.swift */,
+				7255F1042AD8EE7500C101B7 /* EntryViewController.swift */,
 			);
 			path = "Daily-Journal-App";
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7255F1032AD8EE4300C101B7 /* NotesViewController.swift in Sources */,
+				7255F1052AD8EE7500C101B7 /* EntryViewController.swift in Sources */,
 				722BA7E92AD3D6750087A10B /* ViewController.swift in Sources */,
 				722BA7E52AD3D6750087A10B /* AppDelegate.swift in Sources */,
 				722BA7E72AD3D6750087A10B /* SceneDelegate.swift in Sources */,
