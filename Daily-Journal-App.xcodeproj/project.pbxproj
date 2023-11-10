@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		428A51FD2AFA3EA60010CE86 /* BH.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 428A51FC2AFA3EA60010CE86 /* BH.mp3 */; };
+		42BC93A02AFA554A00AC4211 /* WEBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC939F2AFA554A00AC4211 /* WEBViewController.swift */; };
 		722BA7E52AD3D6750087A10B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722BA7E42AD3D6750087A10B /* AppDelegate.swift */; };
 		722BA7E72AD3D6750087A10B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722BA7E62AD3D6750087A10B /* SceneDelegate.swift */; };
 		722BA7E92AD3D6750087A10B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722BA7E82AD3D6750087A10B /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		428A51FC2AFA3EA60010CE86 /* BH.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BH.mp3; sourceTree = "<group>"; };
+		42BC939F2AFA554A00AC4211 /* WEBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEBViewController.swift; sourceTree = "<group>"; };
 		722BA7E12AD3D6750087A10B /* Daily-Journal-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily-Journal-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		722BA7E42AD3D6750087A10B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		722BA7E62AD3D6750087A10B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,10 +107,12 @@
 		722BA7E32AD3D6750087A10B /* Daily-Journal-App */ = {
 			isa = PBXGroup;
 			children = (
+				428A51FC2AFA3EA60010CE86 /* BH.mp3 */,
 				722BA7E42AD3D6750087A10B /* AppDelegate.swift */,
 				722BA7E62AD3D6750087A10B /* SceneDelegate.swift */,
 				722BA7E82AD3D6750087A10B /* ViewController.swift */,
 				722BA7EA2AD3D6750087A10B /* Main.storyboard */,
+				42BC939F2AFA554A00AC4211 /* WEBViewController.swift */,
 				722BA7ED2AD3D6770087A10B /* Assets.xcassets */,
 				722BA7EF2AD3D6770087A10B /* LaunchScreen.storyboard */,
 				722BA7F22AD3D6770087A10B /* Info.plist */,
@@ -239,6 +245,7 @@
 			files = (
 				722BA7F12AD3D6770087A10B /* LaunchScreen.storyboard in Resources */,
 				722BA7EE2AD3D6770087A10B /* Assets.xcassets in Resources */,
+				428A51FD2AFA3EA60010CE86 /* BH.mp3 in Resources */,
 				722BA7EC2AD3D6750087A10B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +276,7 @@
 				722BA7E92AD3D6750087A10B /* ViewController.swift in Sources */,
 				722BA7E52AD3D6750087A10B /* AppDelegate.swift in Sources */,
 				722BA7E72AD3D6750087A10B /* SceneDelegate.swift in Sources */,
+				42BC93A02AFA554A00AC4211 /* WEBViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

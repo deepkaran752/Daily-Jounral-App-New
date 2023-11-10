@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Daily-Journal-App
 //
-//  Created by Erica Sharma on 2023-10-09.
+//  Created by Deepkaran Singh on 2023-10-09.
 //
 
 import UIKit

@@ -52,6 +52,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tkx-EW-rWM">
+                                <rect key="frame" x="324" y="802" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="DarkMode:" destination="BYZ-38-t0r" eventType="valueChanged" id="rAH-ca-942"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -66,6 +73,19 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Daily Journal" id="fYq-To-bQv">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Music" id="TN7-5m-dhv">
+                                <connections>
+                                    <action selector="MusicButtonPlay:" destination="BYZ-38-t0r" id="Nf6-dy-2uX"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Manage" id="cB5-QO-iQP">
+                                <connections>
+                                    <action selector="WebViewManageVideo:" destination="BYZ-38-t0r" id="yA5-XM-fna"/>
+                                    <segue destination="Peq-bB-eQy" kind="show" identifier="webclick" id="q5O-rw-h0N"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="aMV-p2-uEF">
                                 <connections>
@@ -81,6 +101,10 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="Background" destination="8bC-Xf-vdC" id="60g-nQ-LZB"/>
+                        <outlet property="MusicButton" destination="TN7-5m-dhv" id="4Nm-aN-Gkh"/>
+                        <outlet property="Switch" destination="tkx-EW-rWM" id="r6J-mM-dCe"/>
+                        <outlet property="WebViewManage" destination="cB5-QO-iQP" id="4oY-bg-kcA"/>
                         <outlet property="didTapNewButton" destination="aMV-p2-uEF" id="ZXp-tJ-WIg"/>
                         <outlet property="label" destination="8JG-qY-beq" id="Jpg-Qp-QJz"/>
                         <outlet property="table" destination="D57-YM-IfV" id="EDK-73-9SH"/>
@@ -133,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRi-1y-Jv9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1719" y="11"/>
+            <point key="canvasLocation" x="1646" y="538"/>
         </scene>
         <!--Notes View Controller-->
         <scene sceneID="EA4-ec-QUC">
@@ -179,7 +203,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zca-uD-2m6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2565" y="11"/>
+            <point key="canvasLocation" x="2414" y="538"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WFW-UL-4b9">
+            <objects>
+                <viewController id="Peq-bB-eQy" customClass="WEBViewController" customModule="Daily_Journal_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cyQ-S2-May">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="thb-IS-auL">
+                                <rect key="frame" x="0.0" y="227" width="414" height="586"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to manage Notes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hlp-zC-BhW">
+                                <rect key="frame" x="35" y="140" width="345" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="coU-ee-8P9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nwr-cu-utU"/>
+                    <connections>
+                        <outlet property="WebView" destination="thb-IS-auL" id="xIS-1c-oNS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CAA-0h-MVD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1644.9275362318842" y="-175.44642857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mQj-WA-kFa">
