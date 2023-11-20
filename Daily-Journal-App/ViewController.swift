@@ -149,9 +149,34 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     //for playing the music
     @IBAction func MusicButtonPlay(_ sender: Any) {
         if(audioPlayer.isPlaying){
-            audioPlayer.stop()
+            let alert = UIAlertController(title: "Daily Journal App", message: "Do you want to stop playing music?", preferredStyle: .actionSheet)
+                
+                let addAction = UIAlertAction(title: "Yes", style: .default) { [weak self] _ in
+                    // Call the function to navigate to the new note view
+                    self?.audioPlayer.stop()
+                }
+                
+                let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
+                
+                alert.addAction(addAction)
+                alert.addAction(cancelAction)
+                
+                self.present(alert, animated: true, completion: nil)
+            
         }else{
-            audioPlayer.play()
+            let alert = UIAlertController(title: "Daily Journal App", message: "Do you want to play music?", preferredStyle: .actionSheet)
+                
+                let addAction = UIAlertAction(title: "Yes", style: .default) { [weak self] _ in
+                    // Call the function to navigate to the new note view
+                    self?.audioPlayer.play()
+                }
+                
+                let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
+                
+                alert.addAction(addAction)
+                alert.addAction(cancelAction)
+                
+                self.present(alert, animated: true, completion: nil)
         }
     }
     

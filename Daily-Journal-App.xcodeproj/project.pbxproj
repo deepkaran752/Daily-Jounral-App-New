@@ -110,14 +110,14 @@
 				428A51FC2AFA3EA60010CE86 /* BH.mp3 */,
 				722BA7E42AD3D6750087A10B /* AppDelegate.swift */,
 				722BA7E62AD3D6750087A10B /* SceneDelegate.swift */,
-				722BA7E82AD3D6750087A10B /* ViewController.swift */,
 				722BA7EA2AD3D6750087A10B /* Main.storyboard */,
+				722BA7E82AD3D6750087A10B /* ViewController.swift */,
 				42BC939F2AFA554A00AC4211 /* WEBViewController.swift */,
+				7255F1022AD8EE4300C101B7 /* NotesViewController.swift */,
+				7255F1042AD8EE7500C101B7 /* EntryViewController.swift */,
 				722BA7ED2AD3D6770087A10B /* Assets.xcassets */,
 				722BA7EF2AD3D6770087A10B /* LaunchScreen.storyboard */,
 				722BA7F22AD3D6770087A10B /* Info.plist */,
-				7255F1022AD8EE4300C101B7 /* NotesViewController.swift */,
-				7255F1042AD8EE7500C101B7 /* EntryViewController.swift */,
 			);
 			path = "Daily-Journal-App";
 			sourceTree = "<group>";

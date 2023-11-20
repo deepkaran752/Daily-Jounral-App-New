@@ -11,6 +11,7 @@ class EntryViewController: UIViewController {
 
     @IBOutlet var titleField: UITextField!
     @IBOutlet var noteField: UITextView!
+    @IBOutlet var imageO: UIImageView!
     
     public var completion: ((String,String) -> Void)?
     override func viewDidLoad() {
@@ -19,6 +20,8 @@ class EntryViewController: UIViewController {
         // Do any additional setup after loading the view.
         titleField.becomeFirstResponder()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style : .done, target: self, action: #selector(didTapSave))
+        
+        imageO.image = UIImage(named: "deepu.jpeg")
     }
     
     @objc func didTapSave(){

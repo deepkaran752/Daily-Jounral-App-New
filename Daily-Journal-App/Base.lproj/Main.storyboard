@@ -137,6 +137,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kFs-hN-Y1K">
+                                <rect key="frame" x="49" y="595" width="291" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TFh-zC-Dw4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -151,13 +155,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageO" destination="kFs-hN-Y1K" id="ccf-Cd-c61"/>
                         <outlet property="noteField" destination="Est-hV-gU9" id="Fka-LS-f06"/>
                         <outlet property="titleField" destination="Mkj-B0-MYX" id="3Cc-k7-jxK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRi-1y-Jv9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1646" y="538"/>
+            <point key="canvasLocation" x="1644.9275362318842" y="537.05357142857144"/>
         </scene>
         <!--Notes View Controller-->
         <scene sceneID="EA4-ec-QUC">
